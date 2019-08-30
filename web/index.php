@@ -11,8 +11,5 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 ));
 
 // Register view rendering
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
-));
-
+require('views/.index.html');
 $app->run();
